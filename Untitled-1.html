@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Filmes</title>
+    <style>
+        body {
+            background-color: #ffccff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #ff007f;
+            animation: fadeIn 2s;
+        }
+        .catalogo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .filme {
+            background: white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            width: 200px;
+            text-align: center;
+        }
+        .filme img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .filme:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Catálogo de Filmes</h1>
+    <div class="catalogo">
+        <div class="filme">
+            <img src="https://via.placeholder.com/150" alt="Filme 1">
+            <h2>Filme 1</h2>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Assistir Trailer</a>
+        </div>
+        <div class="filme">
+            <img src="https://via.placeholder.com/150" alt="Filme 2">
+            <h2>Filme 2</h2>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Assistir Trailer</a>
+        </div>
+        <div class="filme">
+            <img src="https://th.bing.com/th/id/OIP.K8tyfjhA70gHqDVHqqQEgQHaLH?w=117&h=180&c=7&r=0&o=5&pid=1.7" alt="O Bom Dinossauro">
+            <h2>O Bom Dinossauro</h2>
+            <a href="https://youtu.be/A6z79w5fdDU?si=a0kbBIJXwUnQc2Tx" target="_blank">Assistir Trailer</a>
+        </div>
+        <!-- Adicione mais filmes aqui -->
+    </div>
+
+</body>
+</html>
